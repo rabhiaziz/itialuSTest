@@ -31,4 +31,5 @@ Route::controller(\App\Http\Controllers\NoteController::class)->middleware('auth
     Route::post('/store-note', 'store')->name('store-note');
     Route::get('/show-note/{id}', 'show')->name('show-note');
     Route::delete('/delete-note/{id}', 'destroy')->name('delete-note');
+    Route::post('/store-comment/{noteId}', 'storeComment')->name('store-comment');
 });
