@@ -5,7 +5,7 @@
         }
     </style>
 @endsection
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+<nav class="navbar navbar-expand-md navbar-light bg-info mb-4">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">ItialuS test</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,15 +14,15 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">My Notes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">New Note</a>
+                    <a class="nav-link" href="{{route('my-notes')}}">My Notes</a>
                 </li>
             </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-primary" type="submit">Logout</button>
+            </form>
         </div>
     </div>
 </nav>
