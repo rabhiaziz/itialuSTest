@@ -20,7 +20,8 @@
                     <a class="nav-link" href="{{route('my-notes')}}">My Notes</a>
                 </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex" action="{{route('sign-out')}}" method="get">
+                @csrf
                 <button class="btn btn-outline-primary" type="submit">Logout</button>
             </form>
         </div>
